@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Imóvel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Cadastre o seu imóvel para vender mais rápido!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Venda fácil o seu imóvel!</h1>
+                <p>Descreva as caracteristicas e marque os opcionais que o seu imóvel possui</p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">Título do anúncio <span class="required-field">*</span></label>
+                        <input type="text" id="title" name="title" class="block"
+                            placeholder="Um titulo para anunciar o seu imóvel" minlength="1" maxlength="30" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="price">Preço <span class="required-field">*</span></label>
+                        <input type="number" id="price" name="price" class="block" placeholder="Defina o preço"
+                            required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="description">Descrição: <span class="required-field">*</span></label>
+                        <textarea name="description" id="description" class="block"
+                            placeholder="Aqui você coloca os detalhes do imóvel."></textarea>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="endereco">Endereço: <span class="required-field">*</span></label>
+                        <input type="text" id="endereco" name="endereco" class="block"
+                            placeholder="Digite o endereço do imóvel, ex: Rua João Gomes Batista, Jardim Cidalia, São Paulo/SP - CEP: 04652-160"
+                            required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="area">Área: <span class="required-field">*</span></label>
+                        <input type="number" id="area" name="area" class="block"
+                            placeholder="Digite a área do imóvel, ex: 200 m²" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="dorms">Dormitórios: <span class="required-field">*</span></label>
+                        <input type="number" id="dorms" name="dorms" class="block"
+                            placeholder="Digite a quantidade de dormitórios no imóvel, ex: 2" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="vagas">Vagas: <span class="required-field">*</span></label>
+                        <input type="number" id="vagas" name="vagas" class="block"
+                            placeholder="Digite a quantidade de vagas no imóvel, ex: 1" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="Banheiros">Banheiros: <span class="required-field">*</span></label>
+                        <input type="number" id="Banheiros" name="Banheiros" class="block"
+                            placeholder="Digite a quantidade de Banheiros no imóvel, ex: 1" required>
+                    </div>
+
+                    <div class="box-input">
+                        <p>Mobiliado: <span class="required-field">*</span></p>
+                        <input type="radio" id="mobiliado_sim" name="mobiliado">
+                        <label for="mobiliado_sim">Sim</label>
+                        <input type="radio" id="mobiliado_nao" name="mobiliado">
+                        <label for="mobiliado_nao">Não</label>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="priceIptu">Valor IPTU: <span class="required-field">*</span></label>
+                        <input type="number" id="priceIptu" name="priceIptu" class="block"
+                            placeholder="Informe o valor do IPTU, ex: R$ 1.000,00" required>
+                    </div>
+
+                    <div class="box-input">
+                        <label for="date">Data de compra: <span class="required-field">*</span></label>
+                        <input type="date" id="date" name="date" class="block" required>
+                    </div>
+
+                    <div class="optional-box">
+                        <p>Áreas Comuns:</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="petplace" name="optional[]" value="petplace">
+                                <label for="petplace">Pet Place</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="playground" name="optional[]" value="playground">
+                                <label for="playground">Playground</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="coworking" name="optional[]" value="coworking">
+                                <label for="coworking">Coworking</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="piscina" name="optional[]" value="piscina">
+                                <label for="piscina">Piscina</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="garden" name="optional[]" value="garden">
+                                <label for="garden">Quintal</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="solarium" name="optional[]" value="solarium">
+                                <label for="solarium">Solarium</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="salaodefestas" name="optional[]" value="salaodefestas">
+                                <label for="salaodefestas">Salão de festas</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="fitness" name="optional[]" value="fitness">
+                                <label for="fitness">Academia</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="lavanderia" name="optional[]" value="lavanderia">
+                                <label for="lavanderia">Lavanderia comunitária</label>
+                            </li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="portaria" name="optional[]" value="portaria">
+                                <label for="portaria">Portaria</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="churrasqueira" name="optional[]" value="churrasqueira">
+                                <label for="churrasqueira">Churrasqueira</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="market" name="optional[]" value="market">
+                                <label for="market">Mercado</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="jardin" name="optional[]" value="jardin">
+                                <label for="jardin">Horta/Jardin</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="sauna" name="optional[]" value="sauna">
+                                <label for="sauna">Sauna</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="quadra" name="optional[]" value="quadra">
+                                <label for="quadra">Quadra</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="salaojogos" name="optional[]" value="salaojogos">
+                                <label for="salaojogos">Salão de jogos</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="laje" name="optional[]" value="laje">
+                                <label for="laje">Laje</label>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="varanda" name="optional[]" value="varanda">
+                                <label for="varanda">Varanda</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do imóvel: <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg, image/jpeg" id="images" name="images"
+                            required>
+                    </div>
+                    <input type="submit" value="Cadastrar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
